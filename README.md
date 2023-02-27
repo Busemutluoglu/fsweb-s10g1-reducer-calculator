@@ -103,7 +103,7 @@ export const initialState = {
 > _Tebrikler! Tüm işlemler için actionler ekleme görevini başarıyla tamamladınız! Şimdi aynı işlemleri takip ederek yeni özellikler ekleyeceksiniz. Tüm caseler için bir sonraki case e geçmeden önce testlerini yapmayı unutmayın._
 
 - [*] `M+` a tıklandığında, şu anki memory değerine şu anki total değerini kaydedecek. UI'de test edin.
-- [ ] `MR` a tıklandığında, şu an memorydeki değer şu anki total değerine aktarılacak (APPLY_NUMBER case ine göz atın). UI'de test edin.
+- [*] `MR` a tıklandığında, şu an memorydeki değer şu anki total değerine aktarılacak (APPLY_NUMBER case ine göz atın). UI'de test edin.
 - [ ] `MC` e tıklandığında, şu anki memory değeri sıfırlanacak. UI'de test edin.
 
 ### Görev 3: Esnek görevler
