@@ -5,7 +5,7 @@
 
 - Kullanıcı 1 butonuna tıkadı.
 - total statini güncelleyebilirse onClick e eklenen addOne fonksiyonu gösterebilirdik.
-  bu da belki totali de burdaki velue degerine eşitleyerek olabilir bu örnekte
+  bu da belki totali de burdaki velue degerine eşitleyerek olabilir bu örnekte,
   ...
 
 - TotalDisplay total artı 1'i gösterdi.

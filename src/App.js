@@ -7,8 +7,8 @@ import CalcButton from "./components/CalcButton";
 function App() {
   const [state, dispatch] = useReducer(reducer, initialState);
 
-  function applyNumber(e) {
-    dispatch({ type: "APPLY_NUMBER", payload: e.target.value });
+  function eventHandler(number) {
+    dispatch({ type: "APPLY_NUMBER", payload: number });
   }
   function changeOperation(e) {
     dispatch({
@@ -16,6 +16,8 @@ function App() {
       payload: e.target.value,
     });
   }
+
+  function sonuc() {}
 
   /*  function addOne() {
     dispatch({ type: "ADD_ONE" });
@@ -35,10 +37,10 @@ function App() {
             <TotalDisplay value={state.total} />
             <div className="row details">
               <span id="operation">
-                <b>{state.operation}</b> X
+                <b>{state.operation}</b>
               </span>
               <span id="memory">
-                <b>{state.memory}</b> 0
+                <b>{state.memory}</b>
               </span>
             </div>
 
@@ -49,21 +51,21 @@ function App() {
             </div>
 
             <div className="row">
-              <CalcButton onClick={applyNumber} value={1} />
-              <CalcButton onClick={applyNumber} value={2} />
-              <CalcButton onClick={applyNumber} value={3} />
+              <CalcButton onClick={() => eventHandler(1)} value={1} />
+              <CalcButton onClick={() => eventHandler(2)} value={2} />
+              <CalcButton onClick={() => eventHandler(3)} value={3} />
             </div>
 
             <div className="row">
-              <CalcButton onClick={applyNumber} value={4} />
-              <CalcButton onClick={applyNumber} value={5} />
-              <CalcButton onClick={applyNumber} value={6} />
+              <CalcButton onClick={() => eventHandler(4)} value={4} />
+              <CalcButton onClick={() => eventHandler(5)} value={5} />
+              <CalcButton onClick={() => eventHandler(6)} value={6} />
             </div>
 
             <div className="row">
-              <CalcButton onClick={applyNumber} value={7} />
-              <CalcButton onClick={applyNumber} value={8} />
-              <CalcButton onClick={applyNumber} value={9} />
+              <CalcButton onClick={() => eventHandler(7)} value={7} />
+              <CalcButton onClick={() => eventHandler(8)} value={8} />
+              <CalcButton onClick={() => eventHandler(9)} value={9} />
             </div>
 
             <div className="row">
