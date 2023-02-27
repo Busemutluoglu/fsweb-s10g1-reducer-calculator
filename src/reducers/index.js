@@ -4,6 +4,8 @@ import {
   CHANGE_OPERATION,
   MEMORY_EKLE,
   CLEAR_DISPLAY,
+  TOTALE_AKTAR,
+  MEMORY_SIFIRLA,
 } from "./../actions";
 
 export const initialState = {
@@ -54,6 +56,16 @@ const reducer = (state, action) => {
       return {
         ...state,
         memory: state.total,
+      };
+    case TOTALE_AKTAR:
+      return {
+        ...state,
+        total: state.memory,
+      };
+    case MEMORY_SIFIRLA:
+      return {
+        ...state,
+        memory: 0,
       };
 
     default:

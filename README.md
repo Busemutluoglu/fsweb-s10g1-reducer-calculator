@@ -104,7 +104,7 @@ export const initialState = {
 
 - [*] `M+` a tıklandığında, şu anki memory değerine şu anki total değerini kaydedecek. UI'de test edin.
 - [*] `MR` a tıklandığında, şu an memorydeki değer şu anki total değerine aktarılacak (APPLY_NUMBER case ine göz atın). UI'de test edin.
-- [ ] `MC` e tıklandığında, şu anki memory değeri sıfırlanacak. UI'de test edin.
+- [*] `MC` e tıklandığında, şu anki memory değeri sıfırlanacak. UI'de test edin.
 
 ### Görev 3: Esnek görevler
 

@@ -16,6 +16,12 @@ function App() {
       payload: e.target.value,
     });
   }
+  function totalAktarHandler() {
+    dispatch({ type: "TOTALE_AKTAR" });
+  }
+  function memoryReset() {
+    dispatch({ type: "MEMORY_SIFIRLA" });
+  }
 
   function memoryHandler() {
     dispatch({ type: "MEMORY_EKLE" });
@@ -44,8 +50,8 @@ function App() {
 
             <div className="row">
               <CalcButton onClick={memoryHandler} value={"M+"} />
-              <CalcButton value={"MR"} />
-              <CalcButton value={"MC"} />
+              <CalcButton onClick={totalAktarHandler} value={"MR"} />
+              <CalcButton onClick={memoryReset} value={"MC"} />
             </div>
 
             <div className="row">
