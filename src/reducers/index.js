@@ -2,6 +2,7 @@ import {
   ADD_ONE,
   APPLY_NUMBER,
   CHANGE_OPERATION,
+  MEMORY_EKLE,
   CLEAR_DISPLAY,
 } from "./../actions";
 
@@ -48,6 +49,11 @@ const reducer = (state, action) => {
       return {
         ...state,
         total: 0,
+      };
+    case MEMORY_EKLE:
+      return {
+        ...state,
+        memory: state.total,
       };
 
     default:

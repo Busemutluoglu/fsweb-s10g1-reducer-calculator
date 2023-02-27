@@ -17,11 +17,9 @@ function App() {
     });
   }
 
-  function sonuc() {}
-
-  /*  function addOne() {
-    dispatch({ type: "ADD_ONE" });
-  } */
+  function memoryHandler() {
+    dispatch({ type: "MEMORY_EKLE" });
+  }
   function clear() {
     dispatch({ type: "CLEAR_DISPLAY" });
   }
@@ -45,7 +43,7 @@ function App() {
             </div>
 
             <div className="row">
-              <CalcButton value={"M+"} />
+              <CalcButton onClick={memoryHandler} value={"M+"} />
               <CalcButton value={"MR"} />
               <CalcButton value={"MC"} />
             </div>
